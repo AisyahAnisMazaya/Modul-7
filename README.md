@@ -67,3 +67,43 @@ Fleksibilitas: Program ini sangat fleksibel karena memungkinkan pengguna untuk m
 Efisiensi: Penggunaan loop dan kondisi memungkinkan program berjalan dengan efisien.
 Modularitas: Fungsi sqrt dipisahkan untuk meningkatkan keterbacaan dan memungkinkan penggunaan ulang.
 Kelengkapan: Program ini mencakup berbagai operasi yang umum dilakukan pada array.
+
+*NOMOR 3*
+Deskripsi Program
+Program Go ini dirancang untuk mencatat hasil pertandingan antara dua klub olahraga. Program ini akan meminta pengguna untuk memasukkan nama kedua klub dan kemudian secara berulang meminta skor untuk setiap pertandingan. Program akan terus berjalan hingga pengguna memasukkan skor negatif sebagai tanda akhir input. Setelah semua data pertandingan dimasukkan, program akan menampilkan hasil setiap pertandingan dan klub mana yang memenangkan pertandingan tersebut.
+Penjelasan Kode
+Deklarasi Variabel
+club1, club2: String untuk menyimpan nama kedua klub.
+skor1, skor2: Integer untuk menyimpan skor masing-masing klub dalam setiap pertandingan.
+clubMenang: Slice of string untuk menyimpan nama klub yang memenangkan setiap pertandingan.
+hasil: Slice of string untuk menyimpan hasil setiap pertandingan (menang, kalah, atau seri).
+Fungsi Utama (main)
+Input Nama Klub: Meminta pengguna untuk memasukkan nama kedua klub yang akan bertanding.
+Loop Pertandingan:
+Meminta pengguna memasukkan skor untuk setiap pertandingan.
+Kondisi Berhenti: Jika salah satu skor negatif, loop akan berhenti, menandakan akhir input.
+Menentukan Pemenang: Membandingkan skor dan menambahkan nama klub yang menang ke slice clubMenang dan hasil pertandingan ke slice hasil. Jika seri, maka kata "Draw" ditambahkan ke slice hasil.
+Output Hasil: Mencetak hasil setiap pertandingan ke layar.
+Konsep Penting
+Slice: Struktur data yang dinamis dan fleksibel untuk menyimpan kumpulan data dengan tipe yang sama. Dalam program ini, slice digunakan untuk menyimpan nama klub yang menang dan hasil setiap pertandingan.
+Loop: Digunakan untuk mengulang proses input dan pengolahan data pertandingan.
+Kondisi: Digunakan untuk membuat keputusan, seperti menentukan pemenang atau mengakhiri loop.
+Analisis Fitur
+Fleksibilitas: Program dapat mencatat hasil pertandingan sebanyak yang diinginkan pengguna.
+Kemudahan Penggunaan: Program memiliki antarmuka yang sederhana dan mudah dipahami.
+Kelengkapan: Program dapat mencatat hasil pertandingan, menentukan pemenang, dan menampilkan hasil secara terorganisir.
+Penggunaan Slice
+Slice clubMenang digunakan untuk menyimpan nama klub yang memenangkan setiap pertandingan. Setiap kali ada pertandingan yang selesai, nama klub yang menang akan ditambahkan ke akhir slice menggunakan fungsi append. Slice hasil digunakan untuk menyimpan hasil setiap pertandingan (menang, kalah, atau seri).
+Kelebihan dan Kekurangan
+Kelebihan:
+Sederhana dan mudah dipahami.
+Fleksibel untuk jumlah pertandingan yang tidak terbatas.
+Memberikan output yang jelas dan terorganisir.
+Kekurangan:
+Tidak ada validasi input untuk memastikan pengguna memasukkan data yang valid (misalnya, skor harus bilangan bulat positif).
+Tidak ada fitur tambahan seperti menghitung total kemenangan, kekalahan, atau seri untuk setiap klub.
+Potensi Pengembangan
+Validasi Input: Menambahkan validasi untuk memastikan pengguna memasukkan data yang valid.
+Fitur Tambahan: Menambahkan fitur untuk menghitung statistik pertandingan, seperti total kemenangan, kekalahan, dan seri untuk setiap klub.
+Antarmuka Pengguna: Membuat antarmuka pengguna yang lebih interaktif, misalnya menggunakan library seperti fmt.Println untuk menampilkan hasil dalam format yang lebih menarik.
+Persistensi Data: Menyimpan data pertandingan ke dalam file atau database untuk digunakan di kemudian hari.
