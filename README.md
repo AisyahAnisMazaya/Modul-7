@@ -107,3 +107,43 @@ Validasi Input: Menambahkan validasi untuk memastikan pengguna memasukkan data y
 Fitur Tambahan: Menambahkan fitur untuk menghitung statistik pertandingan, seperti total kemenangan, kekalahan, dan seri untuk setiap klub.
 Antarmuka Pengguna: Membuat antarmuka pengguna yang lebih interaktif, misalnya menggunakan library seperti fmt.Println untuk menampilkan hasil dalam format yang lebih menarik.
 Persistensi Data: Menyimpan data pertandingan ke dalam file atau database untuk digunakan di kemudian hari.
+
+*NOMOR 4*
+Deskripsi Program
+Program Go ini dirancang untuk memproses teks yang diinputkan oleh pengguna. Fungsi-fungsi utama dalam program ini meliputi:
+Membaca Input: Membaca teks dari input pengguna, membatasi maksimal 127 karakter.
+Membalik Teks: Membalik urutan karakter dalam teks.
+Mendeteksi Palindrom: Memeriksa apakah teks tersebut merupakan palindrom.
+Menampilkan Hasil: Menampilkan teks asli, teks terbalik, dan hasil deteksi palindrom.
+Penjelasan Kode
+Deklarasi Variabel dan Konstanta
+NMAX: Konstanta yang menentukan ukuran maksimum array.
+tabel: Tipe alias untuk array rune dengan ukuran NMAX, digunakan untuk menyimpan karakter-karakter teks.
+m: Integer untuk menyimpan panjang teks yang diinputkan.
+Fungsi-Fungsi
+isiArray:
+Meminta pengguna untuk memasukkan teks.
+Membaca karakter per karakter hingga mencapai titik ('.') atau batas maksimum.
+Menyimpan karakter-karakter yang valid ke dalam array t.
+cetakArray:
+Mencetak setiap karakter dalam array t ke layar.
+balikanArray:
+Membalik urutan karakter dalam array t menggunakan teknik swapping.
+palindrom:
+Membuat salinan array t ke array temp.
+Membalik array temp.
+Membandingkan elemen-elemen kedua array, jika ada perbedaan, maka teks bukan palindrom.
+Fungsi Utama (main)
+Deklarasi Variabel: Mendeklarasikan variabel tab dan m.
+Membaca Input: Memanggil fungsi isiArray untuk membaca teks dari pengguna dan menyimpannya ke dalam array tab.
+Membalik Teks: Memanggil fungsi balikanArray untuk membalik urutan karakter dalam array tab.
+Menampilkan Teks Terbalik: Memanggil fungsi cetakArray untuk mencetak teks terbalik.
+Mendeteksi Palindrom: Memanggil fungsi palindrom untuk memeriksa apakah teks tersebut merupakan palindrom.
+Menampilkan Hasil Palindrom: Mencetak hasil deteksi palindrom ke layar.
+Konsep Penting
+Array: Digunakan untuk menyimpan karakter-karakter teks.
+Loop: Digunakan untuk mengiterasi karakter-karakter dalam array.
+Kondisi: Digunakan untuk membuat keputusan, seperti memeriksa akhir input atau membandingkan karakter.
+Fungsi: Digunakan untuk membagi kode menjadi bagian-bagian yang lebih kecil dan dapat digunakan kembali.
+Algoritma Pembalik Array: Digunakan untuk membalik urutan karakter dalam array.
+Algoritma Deteksi Palindrom: Digunakan untuk memeriksa apakah teks tersebut merupakan palindrom.
