@@ -34,3 +34,36 @@ Penjelasan Lebih Lanjut
 Fungsi math.Pow digunakan untuk menghitung pangkat dari suatu bilangan.
 Penggunaan float64 untuk perhitungan jarak memberikan akurasi yang lebih baik dibandingkan dengan tipe data integer.
 Logika dalam fungsi dalamLingkaran dan dL12 mengimplementasikan definisi matematis dari titik yang berada di dalam lingkaran.
+
+*NOMOR 2*
+Deskripsi Program
+Program Go ini dirancang untuk melakukan berbagai operasi pada sebuah array bilangan bulat. Program ini memungkinkan pengguna untuk:
+Memasukkan data: Meminta pengguna untuk memasukkan jumlah elemen array dan nilai-nilai elemen tersebut.
+Menampilkan data: Menampilkan seluruh isi array, elemen-elemen dengan indeks ganjil, genap, atau kelipatan suatu bilangan.
+Manipulasi data: Menghapus elemen pada indeks tertentu.
+Analisis data: Menghitung rata-rata, standar deviasi, dan frekuensi kemunculan suatu bilangan dalam array.
+Penjelasan Kode
+Deklarasi Variabel
+N: Menyimpan jumlah elemen dalam array.
+x: Menyimpan bilangan untuk mencari indeks kelipatannya.
+arr: Array untuk menyimpan bilangan-bilangan yang dimasukkan pengguna.
+bilangan: Variabel sementara untuk menyimpan bilangan yang sedang dibaca.
+index: Menyimpan indeks elemen yang akan dihapus.
+sum, mean, sd, freq: Variabel untuk perhitungan rata-rata, standar deviasi, dan frekuensi.
+Fungsi Utama (main)
+Input Data: Meminta pengguna untuk memasukkan jumlah elemen array dan nilai-nilai elemen tersebut.
+Operasi Array: Melakukan berbagai operasi pada array sesuai dengan pilihan, seperti menampilkan elemen, menghapus elemen, menghitung rata-rata, standar deviasi, dan frekuensi.
+Output: Mencetak hasil setiap operasi ke layar.
+Fungsi Pendukung
+sqrt: Fungsi ini digunakan untuk menghitung akar kuadrat dari sebuah bilangan menggunakan metode Newton-Raphson.
+Konsep Penting
+Array: Struktur data yang digunakan untuk menyimpan kumpulan data dengan tipe yang sama.
+Loop: Digunakan untuk mengiterasi elemen-elemen dalam array.
+Kondisi: Digunakan untuk membuat keputusan berdasarkan nilai tertentu (misalnya, indeks ganjil, genap, atau kelipatan).
+Fungsi: Digunakan untuk membagi kode menjadi bagian-bagian yang lebih kecil dan dapat digunakan kembali.
+Algoritma: Digunakan untuk menyelesaikan masalah, seperti menghitung rata-rata, standar deviasi, dan akar kuadrat.
+Analisis Fitur
+Fleksibilitas: Program ini sangat fleksibel karena memungkinkan pengguna untuk melakukan berbagai operasi pada array.
+Efisiensi: Penggunaan loop dan kondisi memungkinkan program berjalan dengan efisien.
+Modularitas: Fungsi sqrt dipisahkan untuk meningkatkan keterbacaan dan memungkinkan penggunaan ulang.
+Kelengkapan: Program ini mencakup berbagai operasi yang umum dilakukan pada array.
